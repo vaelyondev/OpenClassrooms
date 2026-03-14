@@ -1,20 +1,83 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Mobile */
 
 @media (max-width: 768px) {
 
-    /* Header */
-
-    header {
-        display: flex;
-        justify-content: center;
-    }
-
-    header img {
-        height: 30px;
-    }
+    /* Police */
 
     body {
         font-family: "Roboto", sans-serif;
+    }
+
+    /* Header */
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+        background-color: #FFFFFF;
+        position: relative;
+        z-index: 1;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .localisation {
+        display: flex;
+        justify-content: center;
+        gap: 17px;
+        color: #353535;
+        background-color: #EAEAEA;
+        padding: 15px 0;
+        font-weight: 500;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .localisation i {
+        width: 12px;
+        height: 16px;
+    }
+
+    .localisation span {
+        height: 16px;
+    }
+
+    /* Main */
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 40px 0;
+        background-color: #F6F6F6;
+    }
+
+    .button h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: #000000;
+    }
+
+    .button h2 {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        color: #353535;
+    }
+
+    .button button {
+        margin-top: 15px;
     }
 
 }
