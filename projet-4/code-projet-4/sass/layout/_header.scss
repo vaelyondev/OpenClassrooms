@@ -1,0 +1,36 @@
+  /* Header */
+  .logo {
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      background-color: #FFFFFF;
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  .logo img {
+      height: 30px;
+  }
+
+  .localisation {
+      display: flex;
+      justify-content: center;
+      gap: 17px;
+      color: #353535;
+      background-color: #EAEAEA;
+      padding: 15px 0;
+      font-weight: 500;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .localisation i {
+      width: 12px;
+      height: 16px;
+  }
+
+  .localisation span {
+      height: 16px;
+  }
