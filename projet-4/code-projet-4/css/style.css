@@ -47,6 +47,33 @@ body {
   height: 16px;
 }
 
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 25px;
+}
+.footer img {
+  width: 100px;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.footer li i {
+  font-size: 12px;
+}
+
 .button {
   display: flex;
   flex-direction: column;
@@ -55,22 +82,166 @@ body {
   padding: 40px 0;
   background-color: #F6F6F6;
 }
-
 .button h1 {
   font-size: 24px;
   font-weight: 700;
   color: #000000;
 }
-
 .button h2 {
   margin-top: 10px;
   font-size: 18px;
   font-weight: 300;
   color: #353535;
 }
-
 .button button {
   margin-top: 15px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
+}
+.button button:hover {
+  opacity: 0.85;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.35);
+}
+
+.fonctionnement {
+  padding: 30px 20px;
+}
+.fonctionnement h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.fonctionnement__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #F6F6F6;
+  padding: 20px;
+  padding-left: 35px;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card span {
+  position: absolute;
+  left: -10px;
+  background-color: #9356DC;
+  color: white;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.card i {
+  color: #7E7E7E;
+  font-size: 20px;
+}
+.card p {
+  font-weight: 500;
+  margin: 0;
+}
+.card:hover i {
+  color: #9356DC;
+}
+
+.restaurants {
+  padding: 30px 20px;
+  background-color: #F6F6F6;
+}
+.restaurants h2 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.restaurants__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.restaurant-card {
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.restaurant-card .badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.restaurant-card .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.restaurant-card .card-content h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+.restaurant-card .card-content p {
+  margin: 5px 0 0;
+  color: #353535;
+}
+.restaurant-card .card-content i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.heart {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+.heart i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+}
+.heart .heart-empty {
+  color: black;
+}
+.heart .heart-full {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.heart:hover .heart-full {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

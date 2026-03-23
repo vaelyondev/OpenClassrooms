@@ -1,0 +1,30 @@
+.footer {
+    background-color: #353535;
+    color: white;
+    padding: 25px;
+
+    img {
+        width: 100px;
+        margin-bottom: 15px;
+        filter: brightness(0) invert(1);
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        cursor: pointer;
+
+        i {
+            font-size: 12px;
+        }
+    }
+}
