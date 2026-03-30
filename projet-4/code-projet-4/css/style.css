@@ -84,6 +84,38 @@ body {
   height: 16px;
 }
 
+/* Menus Header */
+.header-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+}
+
+.back {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  color: #353535;
+  transition: transform 300ms ease-out, opacity 300ms ease-out;
+}
+
+.back:active {
+  transform: translateY(-50%) scale(0.9);
+  opacity: 0.7;
+}
+
+.back i {
+  font-size: 30px;
+}
+
+.header-menu .logo {
+  box-shadow: none;
+}
+
 .footer {
   background-color: #353535;
   color: white;
@@ -109,6 +141,33 @@ body {
 }
 .footer li i {
   font-size: 12px;
+}
+
+.restaurant-image img {
+  width: 100%;
+  height: 275px;
+  object-fit: cover;
+  display: block;
+}
+
+.menu {
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -40px;
+  position: relative;
+  padding: 30px 20px;
+}
+
+.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-header h1 {
+  font-weight: 400;
+  font-family: "Shrikhand", cursive;
+  margin: 0;
 }
 
 .button {
@@ -219,6 +278,8 @@ body {
   overflow: hidden;
   position: relative;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: inherit;
 }
 .restaurant-card img {
   width: 100%;

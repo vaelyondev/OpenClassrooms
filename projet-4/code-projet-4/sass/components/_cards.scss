@@ -79,6 +79,8 @@
     overflow: hidden;
     position: relative;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: inherit;
 
     img {
         width: 100%;
@@ -164,7 +166,7 @@
         transform: scale(0.8);
     }
 
-    &-checkbox:checked ~ &-label {
+    &-checkbox:checked~&-label {
         .heart-empty {
             opacity: 0;
         }
