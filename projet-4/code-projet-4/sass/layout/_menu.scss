@@ -29,6 +29,45 @@
     }
 }
 
+@media (min-width: 1024px) {
+    .menu {
+        max-width: 1050px;
+        margin: -40px auto 0;
+        padding: 40px;
+
+        &-header {
+            justify-content: center;
+            gap: 30px;
+        }
+
+        &-section {
+            margin-top: 40px;
+
+            h2 {
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .menu-card {
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        &-card {
+            padding: 20px;
+        }
+    }
+
+    .restaurant-image {
+        img {
+            height: 350px;
+        }
+    }
+}
+
 .menu-section {
     margin-top: 30px;
 

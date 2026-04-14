@@ -205,6 +205,36 @@ body {
   margin: 0;
 }
 
+@media (min-width: 1024px) {
+  .menu {
+    max-width: 1050px;
+    margin: -40px auto 0;
+    padding: 40px;
+  }
+  .menu-header {
+    justify-content: center;
+    gap: 30px;
+  }
+  .menu-section {
+    margin-top: 40px;
+  }
+  .menu-section h2 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-section .menu-card {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .menu-card {
+    padding: 20px;
+  }
+  .restaurant-image img {
+    height: 350px;
+  }
+}
 .menu-section {
   margin-top: 30px;
 }
