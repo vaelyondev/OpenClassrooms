@@ -29,3 +29,29 @@
         }
     }
 }
+
+@media (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 40px;
+        padding: 40px 60px;
+
+        img {
+            margin: 0;
+            order: 2;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            order: 1;
+
+            li {
+                margin: 0;
+            }
+        }
+    }
+}

@@ -129,3 +129,13 @@
         margin-right: 60px;
     }
 }
+
+.menu-card:active {
+    .menu-check {
+        transform: translateX(0);
+    }
+
+    .price {
+        margin-right: 60px;
+    }
+}

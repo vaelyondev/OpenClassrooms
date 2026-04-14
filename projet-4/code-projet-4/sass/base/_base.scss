@@ -10,6 +10,32 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+// reponsive
+@media (min-width: 1024px) {
+
+    .fonctionnement__cards,
+    .restaurants__cards,
+    .fonctionnement h2,
+    .restaurants h2 {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        text-align: center;
+    }
+
+    .button h1,
+    .button h2,
+    .button button {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+}
+
 /* Loader */
 .loader {
     position: fixed;
