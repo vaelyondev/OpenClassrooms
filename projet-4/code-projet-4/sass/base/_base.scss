@@ -36,33 +36,14 @@ body {
 
 }
 
-/* Loader */
+// loader
 .loader {
     position: fixed;
     inset: 0;
     background: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     z-index: 999;
 
-    animation: loader-fade 2s forwards;
-}
-
-.loader-spinner {
-    width: 50px;
-    height: 50px;
-    border: 5px solid #9356DC;
-    border-top-color: #FF79DA;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-}
-
-/* rotation */
-@keyframes spin {
-    to {
-        transform: rotate(360deg);
-    }
+    animation: loader-fade 1s ease forwards;
 }
 
 /* disparition */
