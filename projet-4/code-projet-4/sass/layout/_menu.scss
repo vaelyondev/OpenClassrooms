@@ -51,6 +51,33 @@
     }
 }
 
+.menu-section {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fade-in 1.5s ease forwards;
+}
+
+// décalage des sections
+.menu-section:nth-of-type(1) {
+    animation-delay: 0.5s;
+}
+
+.menu-section:nth-of-type(2) {
+    animation-delay: 1s;
+}
+
+.menu-section:nth-of-type(3) {
+    animation-delay: 2s;
+}
+
+// animation
+@keyframes fade-in {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .menu-card {
     display: flex;
     align-items: center;
