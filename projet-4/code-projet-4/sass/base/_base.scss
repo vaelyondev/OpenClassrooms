@@ -42,6 +42,7 @@ body {
     inset: 0;
     background: white;
     z-index: 999;
+    pointer-events: none;
 
     animation: loader-fade 1s ease forwards;
 }
